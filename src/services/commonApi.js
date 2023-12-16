@@ -10,9 +10,11 @@ let reqConfig = {
     }
 
 }
-return await axios(reqConfig).then((result)=>{
+return await axios(reqConfig)
+.then((result)=>{
     return result 
-}).catch((err)=>{
+})
+.catch((err)=>{
     return err
 })
 }
